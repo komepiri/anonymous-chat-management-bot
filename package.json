@@ -1,0 +1,26 @@
+{
+  "name": "anonymous-chat-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.15.1",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.2",
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
