@@ -17,12 +17,12 @@ module.exports = {
 
     const record = getMessageByDiscordMessageId(db, guildId, targetMessage.id);
     if (!record) {
-      await interaction.reply({ content: 'そのメッセージは匿名投稿ではありません。', ephemeral: true });
+      await interaction.reply({ content: '指定されたメッセージは匿名投稿ではありません。', ephemeral: true });
       return;
     }
 
     if (record.sender_id !== interaction.user.id) {
-      await interaction.reply({ content: '自分の投稿だけ削除できます。', ephemeral: true });
+      await interaction.reply({ content: '自分の投稿のみ削除できます。', ephemeral: true });
       return;
     }
 

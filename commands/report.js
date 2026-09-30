@@ -32,7 +32,7 @@ module.exports = {
 
     const record = getMessageByDiscordMessageId(db, guildId, targetMessage.id);
     if (!record) {
-      await interaction.reply({ content: 'そのメッセージは匿名投稿ではありません。', ephemeral: true });
+      await interaction.reply({ content: '指定されたメッセージは匿名投稿ではありません。', ephemeral: true });
       return;
     }
 

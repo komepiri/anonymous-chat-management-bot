@@ -14,10 +14,6 @@ module.exports = {
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
   async execute(interaction) {
-    if (!interaction.memberPermissions?.has(PermissionFlagsBits.Administrator)) {
-      await interaction.reply({ content: 'このコマンドはサーバー管理者のみ実行できます。', ephemeral: true });
-      return;
-    }
 
     const targetUser = interaction.options.getUser('user');
     const guildId = interaction.guildId;

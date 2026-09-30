@@ -26,7 +26,7 @@ module.exports = {
         const existingMessage = await channel.messages.fetch(botMessageId);
         await existingMessage.delete();
       } catch (error) {
-        // ignore stale or missing message
+        // エラー処理めんどくさいからしないよ
       }
     }
 

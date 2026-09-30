@@ -181,8 +181,7 @@ async function handleInteraction(client, interaction) {
       await interaction.reply({ content: '期間を選択してください。', components: [durationRow], ephemeral: true });
       return;
     }
-    // 一応いれたけど多分いらん
-    await interaction.reply({ content: 'この処分はまだ対応していません。', ephemeral: true });
+    await interaction.reply({ content: 'もへもへ', ephemeral: true });
     return;
   }
 
