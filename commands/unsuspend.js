@@ -12,6 +12,7 @@ module.exports = {
         .setRequired(true),
     )
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+    cmdname: 'unsuspend', // This is the command name used in BotSetup.js for loading commands logs. Not used by Discord.js for command registration.
 
   async execute(interaction) {
 

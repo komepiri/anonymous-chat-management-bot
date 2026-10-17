@@ -5,6 +5,7 @@ module.exports = {
   data: {
     name: '匿名投稿を削除',
     type: 3,
+    cmdname: 'anon-post-delete',
   },
   async execute(interaction) {
     const targetMessage = interaction.targetMessage;

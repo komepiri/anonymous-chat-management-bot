@@ -21,6 +21,7 @@ module.exports = {
   data: {
     name: '匿名投稿を編集',
     type: 3,
+    cmdname: 'anon-post-edit',
   },
   async execute(interaction) {
     const targetMessage = interaction.targetMessage;

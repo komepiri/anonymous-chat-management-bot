@@ -13,7 +13,7 @@ function loadCommands(client, commandsPath) {
     const command = require(filePath);
     if ('data' in command && 'execute' in command) {
       client.commands.set(command.data.name, command);
-      console.log(`[INFO] Loaded command: ${command.data.name}`);
+      console.log(`[INFO] Loaded command: ${command.data.cmdname}`);
     } else {
       console.log(`[WARN] The command at ${filePath} is missing a required "data" or "execute" property.`);
     }

@@ -20,6 +20,7 @@ module.exports = {
   data: {
     name: '匿名投稿を通報',
     type: 3,
+    cmdname: 'anon-post-report',
   },
   async execute(interaction) {
     const targetMessage = interaction.targetMessage;
