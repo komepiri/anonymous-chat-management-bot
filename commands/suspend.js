@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
-const { db, getActiveSuspension, setSuspension } = require('../db.js');
+const { db, getActiveSuspension, setSuspension } = require('../db/db.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
